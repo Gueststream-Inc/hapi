@@ -8,7 +8,7 @@
 
 namespace Gueststream;
 
-
-class HAPI {
+class HAPI
+{
 
 }

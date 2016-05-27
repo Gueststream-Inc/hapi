@@ -29,5 +29,5 @@
     "psr-4": {
       "Gueststream\\Test\\": "tests"
     }
-  },
+  }
 }
