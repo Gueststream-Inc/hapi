@@ -1,0 +1,33 @@
+{
+  "name": "gueststream/hapi",
+  "description": "HomeAway Payment Island Alternate Tokenization service API wrapper",
+  "keywords": [
+    "HAPI",
+    "HAT",
+    "HomeAway"
+  ],
+  "homepage": "https://github.com/Gueststream-Inc/hapi",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Josh Houghtelin",
+      "email": "josh@gueststream.com",
+      "homepage": "http://www.gueststream.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "lib-curl": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Gueststream\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Gueststream\\Test\\": "tests"
+    }
+  }
+}
