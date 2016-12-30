@@ -17,7 +17,7 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase
         $streamResource = fopen('php://temp', 'w+');
         $stream = new Stream($streamResource);
         $stream->write('{"@id":"'.$expectedTokenValue.'"}');
-        $response = new Response(200,[],$stream);
+        $response = new Response(200, [], $stream);
 
         // Generating our mock Guzzle Client.
         $mockGuzzleClient = $this
@@ -45,7 +45,7 @@ class TokenizerTest extends \PHPUnit_Framework_TestCase
          * which usually results in a Guzzle Exception but we should get a TokenizerException
          * to allow our app to be more precise about the problem that's occurring.
          */
-        $tokenizer = new Tokenizer('fake-api-key','fake-client-id');
+        $tokenizer = new Tokenizer('fake-api-key', 'fake-client-id');
 
         $tokenizer->tokenize('fake-credit-card-number');
     }
