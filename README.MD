@@ -12,6 +12,8 @@ provided by HomeAway to remove HomeAway and any other data or service provider f
 that is actively accepting credit card data from the guest.  More information can be found on the 
 [HAPI Reference Page](https://beta.escapia.com/HAPI_Reference/index.html).
 
+HAPI ONLY supports TLS v1.2 SSL encryption and this library expects PHP to auto-negotiate this properly.  The Travis-CI tests for HHVM failed to do this properly so HHVM tests have been removed.
+
 
 ## Install
 
