@@ -110,6 +110,10 @@ class Tokenizer
                 'headers' => [
                     'User-Agent' => 'Gueststream/1.0',
                     'Accept' => 'application/json'
+                ],
+                'curl.options' => [
+                    // As of April 25th, 2016 HAPI only supports TLS v1.2
+                    CURLOPT_SSLVERSION => CURL_SSLVERSION_TLSv1_2
                 ]
             ]
         );
